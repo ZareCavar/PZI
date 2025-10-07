@@ -1,0 +1,130 @@
+/* Container za cijelu stranicu */
+.admin-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Okvir oko svake sekcije */
+  .admin-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Naslov sekcije s pozadinom i okvirom */
+  .admin-section h2 {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.5rem 1rem;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  /* Grupiranje inputa i gumba za kreiranje albuma */
+  .admin-input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .admin-input-group input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .admin-input-group button {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .admin-input-group button:hover {
+    background: #0056b3;
+  }
+  
+  /* Header unutar sekcije za naslov + filter polje */
+  .admin-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Stil filter inputa */
+  .admin-filter {
+    padding: 0.5rem;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Liste albuma i korisnika */
+  .album-list,
+  .user-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .album-list li,
+  .user-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-top: 1px solid #eee;
+  }
+  
+  .album-list li:first-child,
+  .user-list li:first-child {
+    border-top: none;
+  }
+  
+  /* Edit/Delete gumba */
+  .album-list button,
+  .user-list button {
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .album-list button:hover,
+  .user-list button:hover {
+    background: #1e7e34;
+  }
+  
+  /* Posebno stiliziraj Delete gumbe u crveno */
+  .album-list button:nth-child(2),
+  .user-list button:nth-child(2) {
+    background: #dc3545;
+  }
+  
+  .album-list button:nth-child(2):hover,
+  .user-list button:nth-child(2):hover {
+    background: #bd2130;
+  }
+  
+  /* Poruka za nedostatak pristupa */
+  .admin-noaccess {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+  

@@ -1,0 +1,88 @@
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* hamburger */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+  }
+  
+  /* Mobilni prikaz */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 56px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: #fff;
+      border-top: 1px solid #eee;
+      display: none;
+    }
+    .nav-links.open {
+      display: flex;
+    }
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  .nav-user {
+    margin-left: 1rem;
+    color: #333;
+    font-weight: 500;
+  }
+  .nav-logout {
+    margin-left: 0.5rem;
+    background: none;
+    border: 1px solid #333;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .nav-logout:hover {
+    background: #f8f8f8;
+  }

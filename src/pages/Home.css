@@ -1,0 +1,94 @@
+.home-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .home-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .home-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--text);
+  }
+  
+  .home-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    background: var(--card-bg);
+    color: var(--text);
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: transform 0.1s ease;
+  }
+  
+  .btn.primary {
+    background: var(--primary);
+    color: #fff;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .empty {
+    text-align: center;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+  
+  .album-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  }
+  
+  .album-card {
+    display: block;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  .album-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    color: var(--text);
+  }
+  
+  .subtitle {
+    margin: 0 0 0.25rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+  
+  .date {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  
